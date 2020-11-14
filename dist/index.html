@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <!-- Metatags -->
+
+    <!-- <meta name="twitter:image:src" content="http://coronavirusstat-com.stackstaging.com/img/logos/bacteria-_2_.jpg"> -->
+    <!--  <meta name="twitter:url" content="http://coronavirusstat-com.stackstaging.com"> -->
+
+    <!-- /Metatages -->
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <!-- /FontAwesome -->
+
+    <!-- /Google fonts -->
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- /jQuery 1.8 or later, 33 KB -->
+
+    <title>Поиск массовых проблем</title>
+
+    <!-- Добавление дополнительного статического CSS файла -->
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container">
+        <!-- у нас два nav: первый nav-first(наверху) и просто nav(внизу) -->
+        <nav class="nav-first">
+          <!-- Каждый нав делится на две части левая и правая -->
+          <div class="nav-first__left">
+            <a class="logo" href="/index.html"> <img src="./img/logos/logo.svg" alt="Logo" class="logo__img" /> </a>
+          </div>
+
+          <div class="nav-first__right"></div>
+        </nav>
+      </div>
+    </header>
+    <!-- конец -->
+
+    <!-- {% extends 'shop/body.html' %}
+{% load static %}
+{% block title %}
+{% if sub_category %}{{ sub_category.title_mcat }}  | Онлайн-магазин Вкусная Лавка {% else %}{% if category %}{{ category.title_cat }}  | Онлайн-магазин Вкусная Лавка{% else %}Каталог | Онлайн-магазин Вкусная Лавка{% endif %}{% endif %}
+{% endblock title %}
+{% block body_section %} -->
+
+    <!-- Main -->
+
+    <div class="container">
+      <!-- <form method="post" class="mass-problem-form">
+			<input type="text" name="ticket_num" class='mass-problem-form__ticket'>
+			<input type="submit" value="Вперед"  class='mass-problem-form__btn'>
+		</form> -->
+      <div class="mass-problem-section">
+        <form action="#" class="mass-problem-form">
+          <div class="mass-problem-form__div ">
+            <input type="text" class="mass-problem-form__input" placeholder="Номер задачи" id="name" required />
+            <label for="name" class="mass-problem-form__label">Номер задачи</label>
+          </div>
+          <div class="mass-problem-form__div ">
+            <input type="text" class="mass-problem-form__input" placeholder="Глубина поиска (дни)" id="name" />
+            <label for="name" class="mass-problem-form__label">Глубина поиска</label>
+          </div>
+          <div class="mass-problem-form__radio-group my-bottom-3 u-center-text py-left-rigth-small">
+            <div class="mass-problem-form__radio-div">
+              <input
+                type="radio"
+                name="mass-problem-form__radio"
+                class="mass-problem-form__radio"
+                id="mass-problem-form__radio-small"
+                checked
+              />
+              <label for="mass-problem-form__radio-small" class="mass-problem-form__radio-label">
+                <span class="mass-problem-form__radio-button"></span>
+                <span>На первой линии</span>
+              </label>
+            </div>
+            <div class="mass-problem-form__radio-div">
+              <input
+                type="radio"
+                name="mass-problem-form__radio"
+                class="mass-problem-form__radio"
+                id="mass-problem-form__radio-large"
+              />
+              <label for="mass-problem-form__radio-large" class="mass-problem-form__radio-label">
+                <span class="mass-problem-form__radio-button"></span>
+                <span>Все</span>
+              </label>
+            </div>
+          </div>
+          <div class="mass-problem-form__btn">
+            <button class="btn btn_primary-color btn_animated ">
+              Вперед →
+            </button>
+          </div>
+        </form>
+        <div class="results">
+          <div class="results__box my-small">
+            <div class="results__header">
+              <button class="btn__link btn_primary-color  ">
+                Связать →
+              </button>
+              <a href="#" class="results__ticket paragraph paragraph_dark">SD-343</a>
+            </div>
+            <div class="results__description">
+              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+          <div class="results__box my-small">
+            <div class="results__header">
+              <button class="btn__link btn_primary-color  ">
+                Связать →
+              </button>
+              <a href="#" class="results__ticket paragraph paragraph_dark">SD-343</a>
+            </div>
+            <div class="results__description">
+              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
+          </div>
+          <div class="results__box my-small">
+            <div class="results__header">
+              <button class="btn__link btn_primary-color  ">
+                Связать →
+              </button>
+              <a href="#" class="results__ticket paragraph paragraph_dark">SD-343</a>
+            </div>
+            <div class="results__description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- в футере изменения минимальны, только добавлен список -->
+    <!-- footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>

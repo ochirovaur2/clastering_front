@@ -1,0 +1,110 @@
+<% var data = {
+  title: "Массовые проблемы"
+  }; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<!-- {% extends 'shop/body.html' %}
+{% load static %}
+{% block title %}
+{% if sub_category %}{{ sub_category.title_mcat }}  | Онлайн-магазин Вкусная Лавка {% else %}{% if category %}{{ category.title_cat }}  | Онлайн-магазин Вкусная Лавка{% else %}Каталог | Онлайн-магазин Вкусная Лавка{% endif %}{% endif %}
+{% endblock title %}
+{% block body_section %} -->
+
+<!-- Main -->
+
+	<div class="container" >
+		
+		<!-- <form method="post" class="mass-problem-form">
+			<input type="text" name="ticket_num" class='mass-problem-form__ticket'>
+			<input type="submit" value="Вперед"  class='mass-problem-form__btn'>
+		</form> -->
+		<div class="mass-problem-section">
+			<form action="#" class="mass-problem-form">
+			        
+		        <div class="mass-problem-form__div ">
+		            <input type="text" class="mass-problem-form__input" placeholder="Номер задачи" id="name" required>
+		            <label for="name" class="mass-problem-form__label">Номер задачи</label>
+		        </div>
+		        <div class="mass-problem-form__div ">
+		            <input type="text" class="mass-problem-form__input" placeholder="Глубина поиска (дни)" id="name" >
+		            <label for="name" class="mass-problem-form__label">Глубина поиска</label>
+		        </div>
+		        <div class="mass-problem-form__radio-group my-bottom-3 u-center-text py-left-rigth-small">
+		            <div class="mass-problem-form__radio-div">
+		                <input type="radio" name="mass-problem-form__radio" class="mass-problem-form__radio" id="mass-problem-form__radio-small" checked>
+		                <label for="mass-problem-form__radio-small" class="mass-problem-form__radio-label">   <span class="mass-problem-form__radio-button"></span>
+		                    <span>На первой линии</span> 
+		                </label>
+		            </div>
+		            <div class="mass-problem-form__radio-div">
+		                <input type="radio" name="mass-problem-form__radio" class="mass-problem-form__radio" id="mass-problem-form__radio-large" >
+		                 <label for="mass-problem-form__radio-large" class="mass-problem-form__radio-label">
+		                    <span class="mass-problem-form__radio-button"></span>
+		                    <span>Все</span>
+		                 </label>
+		            </div>
+
+		            
+		        </div>
+		        <div class="mass-problem-form__btn">
+		            <button class="btn btn_primary-color btn_animated ">
+		                Вперед →
+		            </button>
+		        </div>   
+		           
+		        
+		    </form>
+		    <div class="results">
+		    	<div class="results__box my-small">
+		    		<div class="results__header">
+		    			<button class="btn__link btn_primary-color  ">
+		                	Связать →
+		           		</button>
+		           		<a href="#" class="results__ticket paragraph paragraph_dark">SD-343</a>
+		    		</div>
+		    		<div class="results__description">
+		    			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    			</p>
+		    		</div>
+
+		    	</div>
+		    	<div class="results__box my-small">
+		    		<div class="results__header">
+		    			
+		    			<button class="btn__link btn_primary-color  ">
+		                	Связать →
+		           		</button>
+		           		<a href="#" class="results__ticket paragraph paragraph_dark">SD-343</a>
+		    		</div>
+		    		<div class="results__description">
+		    			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    			</p>
+		    		</div>
+		    		
+		    	</div>
+		    	<div class="results__box my-small">
+		    		<div class="results__header">
+		    			<button class="btn__link btn_primary-color  ">
+		                	Связать →
+		           		</button>
+		           		<a href="#" class="results__ticket paragraph paragraph_dark">SD-343</a>
+		    		</div>
+		    		<div class="results__description">
+		    			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		    			</p>
+		    		</div>
+		    		
+		    	</div>
+		    </div>
+		</div>
+	</div>
+	
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
